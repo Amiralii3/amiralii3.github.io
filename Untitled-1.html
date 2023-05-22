@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>صفحه وب با پس زمینه زیبا</title>
+	<style>
+		body {
+			
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		background-size:cover;
+		}
+
+		.button {
+			
+			color: none;
+			padding: 12px;
+			border: none;
+			border-radius: 4px;
+			font-size: 20px;
+			cursor: pointer;
+			transition: opacity 0.2s ease-in-out;
+			border: 5px solid #000;
+			border-radius: 25px ;
+			padding: 20px;
+			width: 500px;
+			margin: auto;
+			color:#9400d3;
+		}
+
+		.button:hover {
+			opacity: 0.8;
+		}
+
+		.button:focus {
+			outline: none;
+		}
+
+		.hidden {
+			display: none;
+		}
+		.a{color:#9400d3;
+		
+		}
+	</style>
+</head>
+<body background="file:///C|/Users/amir ali/Downloads/IMG_20230521_004245_509.jpg">
+	<button style="background:none" id="myButton" class="button" style="font-size:500px" style="font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif">کلیک کنید</button>
+    <div class="a">
+	<h1 id="myText" class="hidden" style="font-size:74px" style="color:#9400d3">منیدونستی من تورو خیلی دوست دارم ؟ </h1>
+    </div>
+	<script>
+		var button = document.getElementById("myButton");
+		var text = document.getElementById("myText");
+		button.addEventListener("click", function() {
+			button.classList.add("hidden");
+			text.classList.remove("hidden");
+		});
+	</script>
+</body>
+</html>
